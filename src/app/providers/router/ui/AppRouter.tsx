@@ -2,11 +2,11 @@ import {Route, Routes} from "react-router-dom";
 import {MainPage} from "pages/Main";
 import {AboutPage} from "pages/About";
 import React, {Suspense} from "react";
-import {routeConfig, showMe} from "shared/config/routeConfig/routeConfig";
+import {routeConfig} from "shared/config/routeConfig/routeConfig";
 
 
 export const AppRouter = () => {
-    showMe()
+
     return (
         <Suspense fallback={<div>Loading...</div>}>
             <Routes>

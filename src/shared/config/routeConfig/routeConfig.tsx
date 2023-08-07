@@ -23,7 +23,3 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
         element: <AboutPage />
     }
 }
-
-export function showMe () {
-    console.log(Object.values(routeConfig))
-}
