@@ -33,13 +33,13 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
             'sass-loader',
         ],
     };
-
+    // если бы не тс лоадер, пришлось бы настраивать бабель лоадер для реакта и для проекта в целом)
     const typescriptLoader = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
     };
-
+    // лоадеры обрабатываются снизу вверху, то есть начиная с css loader
     return [
         fileLoader,
         svgLoader,
