@@ -32,6 +32,10 @@ const config: Config = {
         'node',
     ],
 
+    modulePaths: [
+        '<rootDir>src',
+    ],
+
     // An array of regexp pattern strings used to skip coverage collection
     coveragePathIgnorePatterns: [
         '\\\\node_modules\\\\',
