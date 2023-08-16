@@ -4,6 +4,7 @@ The main idea of this project is to build production-level, scalable and well-te
 Project is still in progress, this md file is going to be update in the future
 
 Let's focus on what we have now:
+###### ✔️ React.js
 ###### ✔️ FSD architecture which will allow us build scalable project and make it easily maintainable
 ###### ✔️ Web app supports multiple languages (i18next) 
 ###### ✔️ Decomposition of webpack config
