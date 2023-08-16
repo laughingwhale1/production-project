@@ -1,4 +1,4 @@
-# CV page project.
+# PRODUCTION LEVEL PROJECT
 The main idea of this project is to build production-level, scalable and well-tested project.
 
 Project is still in progress, this md file is going to be update in the future
