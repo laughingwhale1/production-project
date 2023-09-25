@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes, FC } from 'react';
-import { classNames } from 'shared/lib/helpers/classNames';
+import { classNames } from 'shared/lib/classNames/classNames';
 import { Theme, useTheme } from 'app/providers/ThemeProvider';
 import DarkIcon from 'shared/assets/icons/themeDark.svg';
 import LightIcon from 'shared/assets/icons/themeLight.svg';

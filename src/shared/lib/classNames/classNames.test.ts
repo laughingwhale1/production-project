@@ -1,4 +1,4 @@
-import { classNames } from 'shared/lib/helpers/classNames';
+import { classNames } from 'shared/lib/classNames/classNames';
 
 describe('class names', () => {
     test('must return 1 argument', () => {
