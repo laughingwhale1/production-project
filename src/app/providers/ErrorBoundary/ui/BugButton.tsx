@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button } from 'shared/ui/Button';
+import { useTranslation } from 'react-i18next';
 // import cls from './BugButton.module.scss';
 
 interface BugButtonProps {
@@ -15,6 +16,8 @@ export const BugButton: FC<BugButtonProps> = ({ className }) => {
         setError(true);
     };
 
+    const { t } = useTranslation();
+
     useEffect(() => {
         if (error) {
             throw new Error();
@@ -25,7 +28,7 @@ export const BugButton: FC<BugButtonProps> = ({ className }) => {
         <Button
             onClick={onThrowError}
         >
-            throw error
+            {t('Кинуть ошибку')}
         </Button>
     );
 };
