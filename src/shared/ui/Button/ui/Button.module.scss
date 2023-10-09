@@ -13,3 +13,10 @@
 .border {
     border: 1px solid red;
 }
+
+.outline {
+    padding: 15px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: none;
+}
