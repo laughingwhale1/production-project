@@ -20,15 +20,21 @@ jobs:
           node-version: ${{matrix.node-version}}
       - name: install modules
         run: npm install
-      - name: build production project
+      - name: create production project build
+        if: always()
         run: npm run build:prod
-      - name: linting typescript
+      - name: lint typescript
+        if: always()
         run: npm run lint:ts
-      - name: linting css
+      - name: lint css
+        if: always()
         run: npm run lint:scss
       - name: unit testing
+        if: always()
         run: npm run test:unit
       - name: build storybook
+        if: always()
         run: npm run storybook:build
-      - name: screenshot testing loki + storybook
+      - name: regress screenshot loki testing + storybook
+        if: always()
         run: npm run test:ui:ci
