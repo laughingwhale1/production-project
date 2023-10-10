@@ -6,9 +6,7 @@
     transition: width 0.3s;
 }
 
-.collapsed {
-    width: var(--sidebar-width-collapsed);
-}
+
 
 .switchers {
     position: absolute;
@@ -17,4 +15,14 @@
     justify-content: center;
     width: 100%;
     gap: 10px;
+}
+
+.collapsedBtn {
+    position: absolute;
+    right: -40px;
+    bottom: 40px;
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
 }
