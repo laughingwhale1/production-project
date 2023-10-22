@@ -6,6 +6,7 @@ import { PageLoader } from 'widgets/PageLoader';
 import { Suspense } from 'react';
 import App from './app/App';
 import './shared/config/i18n/i18n';
+import 'app/styles/index.scss';
 
 render(
     <BrowserRouter>
