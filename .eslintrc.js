@@ -55,7 +55,7 @@ module.exports = {
         'jsx-a11y/no-static-element-interactions': 'off',
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
-        'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
+        'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'], // это нужно для прогона локи на гитхабе, (потому что на убунту локи всегда падает, флаг update не желательно добавлять в скрипт, а тайпскрипт ругается если раним тесты в среде виндовс 2019)
     },
     globals: {
         __IS_DEV__: true,
